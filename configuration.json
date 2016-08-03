@@ -1,0 +1,33 @@
+{
+    "environments": [
+        {
+            "Name": "production",
+            "VssExtensionIdSuffix": "",
+            "VssExtensionGalleryFlags": [
+                "Public"
+            ],
+            "DisplayNamesSuffix": "",
+            "TaskIds": {
+                "LoadJsonVariables": "50AACA30-AD32-4012-AA28-AA3D8B164CBA"
+            }
+        },
+        {
+            "Name": "preview",
+            "VssExtensionIdSuffix": "-preview",
+            "VssExtensionGalleryFlags": [],
+            "DisplayNamesSuffix": " (Preview)",
+            "TaskIds": {
+                "LoadJsonVariables": "78EC5C2C-9AFD-48F4-873F-08F72FAB053F"
+            }
+        },
+        {
+            "Name": "dev",
+            "VssExtensionIdSuffix": "-dev",
+            "VssExtensionGalleryFlags": [],
+            "DisplayNamesSuffix": " (Development)",
+            "TaskIds": {
+                "LoadJsonVariables": "D5480C93-B0C9-4905-88B6-8B95FC7AA5B7"
+            }
+        }
+    ]
+}
