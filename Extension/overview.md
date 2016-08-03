@@ -13,4 +13,4 @@ By definition, this prerelease extension could introduce breaking changes, or co
 
 ## Tasks included
 
-* **[Load Json Variables](https://github.com/geeklearningio/gl-vsts-tasks-file-patch/wiki/Load-Json-Variables)**: Load variables from a json file.
+* **[Load Json Variables](https://github.com/geeklearningio/gl-vsts-tasks-variables/wiki/Load-Json-Variables)**: Load variables from a json file.
