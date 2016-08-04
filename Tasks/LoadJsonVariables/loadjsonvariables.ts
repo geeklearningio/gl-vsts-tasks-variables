@@ -1,8 +1,8 @@
 import path = require('path');
 import fs = require('fs-extra');
 import tl = require('vsts-task-lib/task');
-try {
-    
+
+try { 
     var jsonSource = tl.getPathInput("JsonSource");
     var variablePrefix = tl.getInput("VariablePrefix");
 
@@ -34,6 +34,7 @@ try {
     recursiveProcessing(json, variablePrefix);
 
     tl.setResult(tl.TaskResult.Succeeded, "Variables loaded");
+
 } catch (err) {
     console.error(String(err));
     tl.setResult(tl.TaskResult.Failed, String(err));

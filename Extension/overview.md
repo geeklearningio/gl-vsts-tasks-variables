@@ -1,16 +1,24 @@
-# Variable Helpers Build and Release Tasks
+# Variables Helpers Build and Release Tasks
 
 Visual Studio Team Services Build and Release Management extensions that help you manipulate and load variables.
 
-## Install the extension to your account
-
-You can find the latest stable version of the VSTS Extension tasks on the [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=geeklearningio.gl-vsts-tasks-file-patch).
-
-## Prerelease channel
-
-Our tasks are build and published in continuous (thanks to VSTS, of course). If you are interested or want to contribute, you can ask us the access of the private prerelease extension to install it to your account.
-By definition, this prerelease extension could introduce breaking changes, or could be very unstable, so it is not recommended to use it for your builds and releases, but only for testing purposes.
+[Learn more](https://github.com/geeklearningio/gl-vsts-tasks-variables/wiki) about this extension on the wiki!
 
 ## Tasks included
 
-* **[Load Json Variables](https://github.com/geeklearningio/gl-vsts-tasks-variables/wiki/Load-Json-Variables)**: Load variables from a json file.
+* **[Load JSON Variables](https://github.com/geeklearningio/gl-vsts-tasks-variables/wiki/Load-JSON-Variables)**: Load variables from a JSON file
+
+## Steps
+
+After installing the extension, you can add one (or more) of the tasks to a new or existing [build definition](https://www.visualstudio.com/en-us/docs/build/define/create) or [release definition](https://www.visualstudio.com/en-us/docs/release/author-release-definition/more-release-definition)
+
+![add-task](Screenshots/Add-Tasks.png)
+
+## Learn more
+
+The [source](https://github.com/geeklearningio/gl-vsts-tasks-variables) for this extension is on GitHub. Take, fork, and extend.
+
+## Release Notes
+
+> **8-4-2016**
+> - Added: Load JSON Variables

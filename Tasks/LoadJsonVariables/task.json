@@ -1,9 +1,9 @@
 {
     "id": "50AACA30-AD32-4012-AA28-AA3D8B164CBA",
     "name": "LoadJsonVariables",
-    "friendlyName": "Load Json Variables",
-    "description": "Load json files into build variables",
-    "helpMarkDown": "[More Information](https://github.com/geeklearningio/gl-vsts-tasks-variables/wiki/Load-Json-Variables) (Version #{Version}#)",    
+    "friendlyName": "Load JSON Variables",
+    "description": "Load variables from a JSON file",
+    "helpMarkDown": "[More Information](https://github.com/geeklearningio/gl-vsts-tasks-variables/wiki/Load-JSON-Variables) (Version #{Version}#)",    
      "category": "Utility",
     "visibility": [
         "Build",
@@ -13,7 +13,7 @@
     "version": {
         "Major": 0,
         "Minor": 0,
-        "Patch": 51
+        "Patch": 0
     },
     "demands": [
         "npm"
@@ -24,18 +24,18 @@
         {
             "name": "JsonSource",
             "type": "filePath",
-            "label": "Json source file",
+            "label": "JSON source file",
             "defaultValue": "",
             "required": true,
-            "helpMarkDown": "Json file to load"
+            "helpMarkDown": "JSON file to load"
         },
         {
             "name": "VariablePrefix",
             "type": "string",
-            "label": "Prefix to use for loaded Variables",
+            "label": "Prefix to use for loaded variables",
             "defaultValue": "",
             "required": true,
-            "helpMarkDown": "variable will be named PREFIX_VariableName"
+            "helpMarkDown": "Loaded variables will be named PREFIX_VariableName"
         }
     ],
     "execution": {

@@ -1,11 +1,8 @@
 {
   "name": "gl-vsts-tasks-variables",
   "version": "0.1.0",
-  "description": "Files tasks for the Team Services build system",
+  "description": "Visual Studio Team Services Build and Release Management extensions that help you manipulate and load variables",
   "main": "gulpfile.js",
-  "directories": {
-    "doc": "docs"
-  },
   "scripts": {
     "clean" : "node ./BuildScripts/clean.js",
     "pullsubmodules": "git submodule foreach git pull origin master",
@@ -19,20 +16,20 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/geeklearningio/gl-vsts-tasks-files"
+    "url": "https://github.com/geeklearningio/gl-vsts-tasks-variables"
   },
   "keywords": [
     "VSTS",
     "build",
     "tasks",
-    "Azure"
+    "variables"
   ],
   "author": "Geek Learning, Adrien Siffermann, Cyprien Autexier",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/geeklearningio/gl-vsts-tasks-files/issues"
+    "url": "https://github.com/geeklearningio/gl-vsts-tasks-variables/issues"
   },
-  "homepage": "https://github.com/geeklearningio/gl-vsts-tasks-files/wiki",
+  "homepage": "https://github.com/geeklearningio/gl-vsts-tasks-variables/wiki",
   "devDependencies": {
     "async": "2.0.1",
     "karma": "^1.1.2",
