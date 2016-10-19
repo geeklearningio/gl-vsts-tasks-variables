@@ -8,6 +8,9 @@
             ],
             "DisplayNamesSuffix": "",
             "TaskIds": {
+                "LoadYamlVariables": "3e90662c-45f1-4e17-b15c-3619c2c6bc30",
+                "LoadPlistVariables": "bbbca02d-cfd6-41d3-93a5-2b23b1762030",
+                "LoadXmlVariables": "7c26e3de-27d5-404d-88bf-57e07eee0089",
                 "LoadJsonVariables": "50AACA30-AD32-4012-AA28-AA3D8B164CBA"
             }
         },
@@ -17,6 +20,9 @@
             "VssExtensionGalleryFlags": [],
             "DisplayNamesSuffix": " (Preview)",
             "TaskIds": {
+                "LoadYamlVariables": "2ebd9031-c896-495e-866a-df89463d5922",
+                "LoadPlistVariables": "eb392005-4949-4e51-9217-642711a08cd0",
+                "LoadXmlVariables": "0f271b52-ed8d-4721-934f-ee504671d0d4",
                 "LoadJsonVariables": "78EC5C2C-9AFD-48F4-873F-08F72FAB053F"
             }
         },
@@ -26,6 +32,9 @@
             "VssExtensionGalleryFlags": [],
             "DisplayNamesSuffix": " (Development)",
             "TaskIds": {
+                "LoadYamlVariables": "3c17f0a4-75ce-4f57-92da-b9c203d7c85c",
+                "LoadPlistVariables": "b7c037b6-4033-4b0a-ba90-b22638a06a25",
+                "LoadXmlVariables": "15dd929e-cfd4-4e8c-9fa9-32d0b0a72c0d",
                 "LoadJsonVariables": "D5480C93-B0C9-4905-88B6-8B95FC7AA5B7"
             }
         }
