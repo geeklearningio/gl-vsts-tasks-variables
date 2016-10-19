@@ -1,6 +1,6 @@
 {
     "id": "731ce2bf-2d96-4cd8-b255-1168e2f40054",
-    "name": "LoadJsonVariables",
+    "name": "LoadPlistVariables",
     "friendlyName": "Load Plist Variables",
     "description": "Load Plist files into build variables",
     "helpMarkDown": "[More Information](https://github.com/geeklearningio/gl-vsts-tasks-variables/wiki/Load-Plist-Variables) (Version #{Version}#)",    

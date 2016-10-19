@@ -1,6 +1,6 @@
 {
     "id": "50AACA30-AD32-4012-AA28-AA3D8B164CBA",
-    "name": "LoadJsonVariables",
+    "name": "LoadYamlVariables",
     "friendlyName": "Load Yaml Variables",
     "description": "Load Yaml files into build variables",
     "helpMarkDown": "[More Information](https://github.com/geeklearningio/gl-vsts-tasks-variables/wiki/Load-Yaml-Variables) (Version #{Version}#)",    
