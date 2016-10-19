@@ -1,8 +1,8 @@
 {
     "manifestVersion": 1,
     "id": "gl-vsts-tasks-variables",
-    "name": "Variable helpers Build and Release Tasks",
-    "version": "0.0.18",
+    "name": "Variables Helpers Build and Release Tasks",
+    "version": "0.0.0",
     "publisher": "geeklearningio",    
     "targets": [
         {
@@ -17,11 +17,18 @@
         "default": "extension-icon.png"        
     },
     "tags": [
-        "json",
-        "xml",
-        "patch",
-        "utility",
-        "file"
+        "Variable",
+        "JSON",
+        "Utility",
+        "File"
+    ],
+    "screenshots": [
+        {
+            "path": "Screenshots/TestBuild.png"
+        },
+        {
+            "path": "Screenshots/Add-Tasks.png"
+        }
     ],
     "content": {
         "details": {
@@ -52,7 +59,10 @@
     "files": [
         {
             "path": "Tasks"
+        },
+        {
+            "path": "Screenshots",
+            "addressable": true
         }
-    ],
-    "contributions": []
+    ]
 }

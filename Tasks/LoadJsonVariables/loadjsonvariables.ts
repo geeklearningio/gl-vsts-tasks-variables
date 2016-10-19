@@ -3,8 +3,7 @@ import fs = require('fs-extra');
 import tl = require('vsts-task-lib/task');
 import {recursiveProcessing} from './common/expandJObject';
 
-try {
-    
+try { 
     var source = tl.getPathInput("JsonSource");
     var variablePrefix = tl.getInput("VariablePrefix");
 
@@ -14,6 +13,7 @@ try {
     recursiveProcessing(jObject, variablePrefix);
 
     tl.setResult(tl.TaskResult.Succeeded, "Variables loaded");
+
 } catch (err) {
     console.error(String(err));
     tl.setResult(tl.TaskResult.Failed, String(err));

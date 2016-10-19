@@ -1,19 +1,36 @@
-# Variable Helpers Build and Release Tasks
+![Icon](https://github.com/geeklearningio/gl-vsts-tasks-variables/blob/master/Extension/extension-icon.png)
+
+# Variables Helpers Build and Release Tasks
+
+![cistatus](https://geeklearning.visualstudio.com/_apis/public/build/definitions/f841b266-7595-4d01-9ee1-4864cf65aa73/48/badge)
 
 Visual Studio Team Services Build and Release Management extensions that help you manipulate and load variables.
 
-## Install the extension to your account
-
-You can find the latest stable version of the VSTS Extension tasks on the [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=geeklearningio.gl-vsts-tasks-file-patch).
-
-## Prerelease channel
-
-Our tasks are build and published in continuous (thanks to VSTS, of course). If you are interested or want to contribute, you can ask us the access of the private prerelease extension to install it to your account.
-By definition, this prerelease extension could introduce breaking changes, or could be very unstable, so it is not recommended to use it for your builds and releases, but only for testing purposes.
+[Learn more](https://github.com/geeklearningio/gl-vsts-tasks-variables/wiki) about this extension on the wiki!
 
 ## Tasks included
 
-* **[Load Json Variables](https://github.com/geeklearningio/gl-vsts-tasks-variables/wiki/Load-Json-Variables)**: Load variables from a json file.
-* **[Load Xml Variables](https://github.com/geeklearningio/gl-vsts-tasks-variables/wiki/Load-Xml-Variables)**: Load variables from an xml file using jxon.
-* **[Load Yaml Variables](https://github.com/geeklearningio/gl-vsts-tasks-variables/wiki/Load-Yaml-Variables)**: Load variables from a yaml file.
-* **[Load Plist Variables](https://github.com/geeklearningio/gl-vsts-tasks-variables/wiki/Load-Plist-Variables)**: Load variables from a plist file.
+* **[Load JSON Variables](https://github.com/geeklearningio/gl-vsts-tasks-variables/wiki/Load-JSON-Variables)**: Load variables from a JSON file
+* **[Load Xml Variables](https://github.com/geeklearningio/gl-vsts-tasks-variables/wiki/Load-Xml-Variables)**: Load variables from an XML file using jxon.
+* **[Load Yaml Variables](https://github.com/geeklearningio/gl-vsts-tasks-variables/wiki/Load-Yaml-Variables)**: Load variables from a YAML file.
+* **[Load Plist Variables](https://github.com/geeklearningio/gl-vsts-tasks-variables/wiki/Load-Plist-Variables)**: Load variables from a PLIST file.
+
+## To contribute
+
+1. Globally install typescript and tfx-cli (to package VSTS extensions): `npm install -g typescript tfx-cli`
+2. From the root of the repo run `npm install`. This will pull down the necessary modules for the different tasks and for the build tools.
+3. Run `npm run build` to compile the build tasks.
+4. Run `npm run package -- --version <version>` to create the .vsix extension packages (supports multiple environments) that includes the build tasks.
+
+## Release Notes
+
+> **8-4-2016**
+> - Added: Load JSON Variables
+
+## Contributors
+
+This extension was created by [Geek Learning](http://geeklearning.io/), with help from the community.
+
+## Attributions
+
+* [JSON File by Oliviu Stoian from the Noun Project](https://thenounproject.com/search/?q=json&i=271662)
