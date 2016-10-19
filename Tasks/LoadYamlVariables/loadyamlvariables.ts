@@ -2,14 +2,15 @@ import path = require('path');
 import fs = require('fs-extra');
 import tl = require('vsts-task-lib/task');
 import {recursiveProcessing} from './common/expandJObject';
+import jsYaml = require('js-yaml');
 
 try {
     
-    var source = tl.getPathInput("JsonSource");
+    var source = tl.getPathInput("YamlSource");
     var variablePrefix = tl.getInput("VariablePrefix");
 
     var content = fs.readFileSync(source, { encoding: 'utf8' });
-    var jObject = JSON.parse(content);
+    var jObject = jsYaml.safeLoad(content);
 
     recursiveProcessing(jObject, variablePrefix);
 

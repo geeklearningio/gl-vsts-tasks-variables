@@ -1,0 +1,10 @@
+{
+  "name": "loadxmlvariables",
+  "private": true,
+  "version": "0.1.0",
+  "dependencies": {
+    "fs-extra": "0.30.0",
+    "vsts-task-lib": "0.9.6",
+    "jxon": "2.0.0-beta.3"
+  }
+}

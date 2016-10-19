@@ -1,0 +1,47 @@
+{
+    "id": "50AACA30-AD32-4012-AA28-AA3D8B164CBA",
+    "name": "LoadJsonVariables",
+    "friendlyName": "Load Yaml Variables",
+    "description": "Load Yaml files into build variables",
+    "helpMarkDown": "[More Information](https://github.com/geeklearningio/gl-vsts-tasks-variables/wiki/Load-Yaml-Variables) (Version #{Version}#)",    
+     "category": "Utility",
+    "visibility": [
+        "Build",
+        "Release"
+    ],
+    "author": "Geek Learning",
+    "version": {
+        "Major": 0,
+        "Minor": 0,
+        "Patch": 51
+    },
+    "demands": [
+        "npm"
+    ],
+    "minimumAgentVersion": "1.91.0",
+    "instanceNameFormat": "Load variables from $(YamlSource) with prefix : $(VariablePrefix)",
+    "inputs": [
+        {
+            "name": "YamlSource",
+            "type": "filePath",
+            "label": "Yaml source file",
+            "defaultValue": "",
+            "required": true,
+            "helpMarkDown": "Yaml file to load"
+        },
+        {
+            "name": "VariablePrefix",
+            "type": "string",
+            "label": "Prefix to use for loaded Variables",
+            "defaultValue": "",
+            "required": true,
+            "helpMarkDown": "variable will be named PREFIX_VariableName"
+        }
+    ],
+    "execution": {
+        "Node": {
+            "target": "loadyamlvariables.js",
+            "argumentFormat": ""
+        }
+    }
+}

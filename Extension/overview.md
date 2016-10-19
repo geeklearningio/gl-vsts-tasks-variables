@@ -14,3 +14,11 @@ By definition, this prerelease extension could introduce breaking changes, or co
 ## Tasks included
 
 * **[Load Json Variables](https://github.com/geeklearningio/gl-vsts-tasks-variables/wiki/Load-Json-Variables)**: Load variables from a json file.
+* **[Load Xml Variables](https://github.com/geeklearningio/gl-vsts-tasks-variables/wiki/Load-Xml-Variables)**: Load variables from an xml file using jxon.
+* **[Load Yaml Variables](https://github.com/geeklearningio/gl-vsts-tasks-variables/wiki/Load-Yaml-Variables)**: Load variables from a yaml file.
+* **[Load Plist Variables](https://github.com/geeklearningio/gl-vsts-tasks-variables/wiki/Load-Plist-Variables)**: Load variables from a plist file.
+
+> **10-19-2016**
+> - Added: Load from YAML File
+> - Added: Load from PLIST File
+> - Added: Load from XML File

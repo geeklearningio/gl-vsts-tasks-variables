@@ -1,15 +1,16 @@
 import path = require('path');
 import fs = require('fs-extra');
 import tl = require('vsts-task-lib/task');
+var plist = require('plist');
 import {recursiveProcessing} from './common/expandJObject';
 
 try {
     
-    var source = tl.getPathInput("JsonSource");
+    var source = tl.getPathInput("PlistSource");
     var variablePrefix = tl.getInput("VariablePrefix");
 
     var content = fs.readFileSync(source, { encoding: 'utf8' });
-    var jObject = JSON.parse(content);
+    var jObject = plist.parse(content);
 
     recursiveProcessing(jObject, variablePrefix);
 
