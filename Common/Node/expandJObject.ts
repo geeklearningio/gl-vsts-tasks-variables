@@ -8,7 +8,7 @@ export function recursiveProcessing(obj: any, prefix: string): void {
     } else if (typeof obj === "string") {
         console.log("Injecting variable : " + prefix + ", value : " + obj);
         tl.setVariable(prefix, obj);
-    } else if (typeof obj === "number") {
+    } else if (typeof obj === "number" || typeof obj === "boolean") {
         console.log("Injecting variable : " + prefix + ", value : " + obj.toString());
         tl.setVariable(prefix, obj.toString());
     } else {
