@@ -4,15 +4,15 @@
   "description": "Visual Studio Team Services Build and Release Management extensions that help you manipulate and load variables",
   "main": "gulpfile.js",
   "scripts": {
-    "clean" : "node ./BuildScripts/clean.js",
-    "pullsubmodules": "git submodule foreach git pull origin master",
-    "postinstall": "node ./BuildScripts/install.js",
-    "prebuild": "node ./BuildScripts/prebuild.js",
+    "clean": "vsts-build-tools-clean",
+    "postinstall": "vsts-build-tools-install",
+    "prebuild": "vsts-build-tools-prebuild",
     "build": "tsc",
-    "package": "node BuildScripts/package.js",
+    "package:clean": "vsts-build-tools-node-modclean --additionalpatterns \"* *.md\"",
+    "package": "vsts-build-tools-package",
+    "pullsubmodules": "git submodule foreach git pull origin master",
     "build:test": "run-s build test",
-    "test": "jasmine JASMINE_CONFIG_PATH=./Tests/jasmine.json",
-    "test:chutzpah": "chutzpah.console ./Tests"
+    "test": "jasmine JASMINE_CONFIG_PATH=./Tests/jasmine.json"
   },
   "repository": {
     "type": "git",
@@ -31,8 +31,20 @@
   },
   "homepage": "https://github.com/geeklearningio/gl-vsts-tasks-variables/wiki",
   "devDependencies": {
+    "@types/fs-extra": "^5.0.2",
+    "@types/jasmine": "^2.5.53",
+    "@types/js-yaml": "^3.9.0",
+    "@types/node": "8.0.19",
+    "@types/q": "^1.0.3",
     "async": "2.0.1",
+    "gl-vsts-tasks-build-scripts": "0.4.0-alpha.1",
     "karma": "^1.1.2",
-    "npm-run-all": "2.3.0"
+    "npm-run-all": "2.3.0",
+    "@types/micromatch": "^3.1.0",
+    "@types/parse-glob": "^3.0.29",
+    "typescript": "2.8.1"
+  },
+  "dependencies": {
+
   }
 }
