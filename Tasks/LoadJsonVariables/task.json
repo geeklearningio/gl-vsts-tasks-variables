@@ -36,6 +36,14 @@
             "defaultValue": "",
             "required": true,
             "helpMarkDown": "Loaded variables will be named PREFIX_VariableName"
+        }, 
+        {
+            "name" : "MarkAsSecret",
+            "type": "boolean",
+            "label": "Indicates if created variables should be marked as secret",
+            "defaultValue": "false",
+            "required": true,
+            "helpMarkDown": "If checked variables created by this task will be marked secret"
         }
     ],
     "execution": {
