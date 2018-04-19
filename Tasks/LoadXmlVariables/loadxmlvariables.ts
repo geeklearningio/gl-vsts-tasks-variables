@@ -8,11 +8,12 @@ try {
     
     var source = tl.getPathInput("XmlSource");
     var variablePrefix = tl.getInput("VariablePrefix");
+    var isSecret = tl.getBoolInput("MarkAsSecret");
 
     var content = fs.readFileSync(source, { encoding: 'utf8' });
     var jObject = jxon.stringToJs(content);
 
-    recursiveProcessing(jObject, variablePrefix);
+    recursiveProcessing(jObject, variablePrefix, isSecret);
 
     tl.setResult(tl.TaskResult.Succeeded, "Variables loaded");
 } catch (err) {
