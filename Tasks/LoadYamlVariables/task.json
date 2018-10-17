@@ -34,7 +34,7 @@
             "type": "string",
             "label": "Prefix to use for loaded Variables",
             "defaultValue": "",
-            "required": true,
+            "required": false,
             "helpMarkDown": "variable will be named PREFIX_VariableName"
         }, 
         {

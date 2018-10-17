@@ -4,7 +4,7 @@ export function recursiveProcessing(obj: any, prefix: string, isSecret: boolean)
     if (obj instanceof Array) {
         for (var index = 0; index < obj.length; index++) {
             var element = obj[index];
-            recursiveProcessing(element, prefix + "_" + index.toString(), isSecret);
+            recursiveProcessing(element, (prefix ? prefix + "_" : "") + index.toString(), isSecret);
         }
     } else if (typeArray.indexOf(typeof obj) > -1) {
         var objValue = typeArray.indexOf(typeof obj)>0 ? obj.toString() : obj;
@@ -15,7 +15,7 @@ export function recursiveProcessing(obj: any, prefix: string, isSecret: boolean)
         for (var key in obj) {
             if (obj.hasOwnProperty(key)) {
                 var element = obj[key];
-                recursiveProcessing(element, prefix + "_" + key, isSecret);
+                recursiveProcessing(element, (prefix ? prefix + "_" : "") + key, isSecret);
             }
         }
     }
