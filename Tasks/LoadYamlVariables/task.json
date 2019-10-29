@@ -15,9 +15,6 @@
         "Minor": 0,
         "Patch": 51
     },
-    "demands": [
-        "npm"
-    ],
     "minimumAgentVersion": "1.91.0",
     "instanceNameFormat": "Load variables from $(YamlSource) with prefix : $(VariablePrefix)",
     "inputs": [

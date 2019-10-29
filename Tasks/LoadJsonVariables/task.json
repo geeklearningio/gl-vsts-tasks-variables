@@ -15,9 +15,6 @@
         "Minor": 0,
         "Patch": 0
     },
-    "demands": [
-        "npm"
-    ],
     "minimumAgentVersion": "1.91.0",
     "instanceNameFormat": "Load variables from $(JsonSource) with prefix : $(VariablePrefix)",
     "inputs": [
