@@ -1,20 +1,22 @@
-import tl = require('vsts-task-lib/task');
+import tl = require("azure-pipelines-task-lib/task");
+
 export function recursiveProcessing(obj: any, prefix: string, isSecret: boolean): void {
-    var typeArray: string[] =["string", "number", "boolean"];
+    let typeArray: string[] =["string", "number", "boolean"];
     if (obj instanceof Array) {
-        for (var index = 0; index < obj.length; index++) {
-            var element = obj[index];
+        for (let index = 0; index < obj.length; index++) {
+            let element = obj[index];
             recursiveProcessing(element, prefix + "_" + index.toString(), isSecret);
         }
     } else if (typeArray.indexOf(typeof obj) > -1) {
-        var objValue = typeArray.indexOf(typeof obj)>0 ? obj.toString() : obj;
-        var objDisplayValue = isSecret ? "******" : objValue;
+        let objValue = typeArray.indexOf(typeof obj)>0 ? obj.toString() : obj;
+        let objDisplayValue = isSecret ? "******" : objValue;
+        // tslint:disable-next-line: no-console
         console.log("Injecting variable : " + prefix + ", value : " + objDisplayValue);
         tl.setVariable(prefix, objValue, isSecret);
     } else {
-        for (var key in obj) {
+        for (let key in obj) {
             if (obj.hasOwnProperty(key)) {
-                var element = obj[key];
+                let element = obj[key];
                 recursiveProcessing(element, prefix + "_" + key, isSecret);
             }
         }

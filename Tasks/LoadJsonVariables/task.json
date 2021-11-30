@@ -4,7 +4,7 @@
     "friendlyName": "Load JSON Variables",
     "description": "Load variables from a JSON file",
     "helpMarkDown": "[More Information](https://github.com/geeklearningio/gl-vsts-tasks-variables/wiki/Load-JSON-Variables) (Version #{Version}#)",    
-     "category": "Utility",
+    "category": "Utility",
     "visibility": [
         "Build",
         "Release"
@@ -47,7 +47,7 @@
         }
     ],
     "execution": {
-        "Node": {
+        "Node10": {
             "target": "loadjsonvariables.js",
             "argumentFormat": ""
         }
