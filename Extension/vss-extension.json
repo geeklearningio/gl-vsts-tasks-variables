@@ -11,7 +11,7 @@
     ],    
     "description": "Build and Release Management extensions that help you manipulate and load variables.",
     "categories": [
-        "Build and release"
+        "Azure Pipelines"
     ],
     "icons": {
         "default": "extension-icon.png"        

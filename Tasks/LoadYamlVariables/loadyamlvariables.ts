@@ -1,6 +1,6 @@
 import fs = require("fs-extra");
-import tl = require("azure-pipelines-task-lib/task");
-import {recursiveProcessing} from "./common/expandJObject";
+import tl = require("azure-pipelines-task-lib");
+import { recursiveProcessing } from "./common/expandJObject";
 import jsYaml = require("js-yaml");
 
 try {
@@ -8,7 +8,7 @@ try {
     let variablePrefix = tl.getInput("VariablePrefix");
     let isSecret = tl.getBoolInput("MarkAsSecret");
 
-    let content = fs.readFileSync(source, { encoding: 'utf8' });
+    let content = fs.readFileSync(source, { encoding: "utf8" });
     let jObject = jsYaml.load(content);
 
     recursiveProcessing(jObject, variablePrefix, isSecret);

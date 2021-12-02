@@ -1,7 +1,7 @@
 import fs = require("fs-extra");
-import tl = require("azure-pipelines-task-lib/task");
+import tl = require("azure-pipelines-task-lib");
 let plist = require("plist");
-import {recursiveProcessing} from "./common/expandJObject";
+import { recursiveProcessing } from "./common/expandJObject";
 
 try {
     let source = tl.getPathInput("PlistSource");
