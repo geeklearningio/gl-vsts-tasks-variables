@@ -246,6 +246,9 @@ ModelManifest.xml
 /tests/GeekLearning.Integration.Test/appsettings.development.json
 
 
+Common/**/*.js
+Common/**/*.js.map
+Common/**/*.d.ts
 Tests/**/*.js
 Tests/**/*.js.map
 Tests/**/*.d.ts

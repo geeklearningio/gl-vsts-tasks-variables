@@ -1,22 +1,21 @@
-import path = require('path');
-import fs = require('fs-extra');
-import tl = require('vsts-task-lib/task');
-var plist = require('plist');
-import {recursiveProcessing} from './common/expandJObject';
+import fs = require("fs-extra");
+import tl = require("azure-pipelines-task-lib");
+let plist = require("plist");
+import { recursiveProcessing } from "./common/expandJObject";
 
 try {
-    
-    var source = tl.getPathInput("PlistSource");
-    var variablePrefix = tl.getInput("VariablePrefix");
-    var isSecret = tl.getBoolInput("MarkAsSecret");
+    let source = tl.getPathInput("PlistSource");
+    let variablePrefix = tl.getInput("VariablePrefix");
+    let isSecret = tl.getBoolInput("MarkAsSecret");
 
-    var content = fs.readFileSync(source, { encoding: 'utf8' });
-    var jObject = plist.parse(content);
+    let content = fs.readFileSync(source, { encoding: "utf8" });
+    let jObject = plist.parse(content);
 
     recursiveProcessing(jObject, variablePrefix, isSecret);
 
     tl.setResult(tl.TaskResult.Succeeded, "Variables loaded");
 } catch (err) {
+    // tslint:disable-next-line: no-console
     console.error(String(err));
     tl.setResult(tl.TaskResult.Failed, String(err));
 }

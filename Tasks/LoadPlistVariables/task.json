@@ -4,7 +4,7 @@
     "friendlyName": "Load Plist Variables",
     "description": "Load Plist files into build variables",
     "helpMarkDown": "[More Information](https://github.com/geeklearningio/gl-vsts-tasks-variables/wiki/Load-Plist-Variables) (Version #{Version}#)",    
-     "category": "Utility",
+    "category": "Utility",
     "visibility": [
         "Build",
         "Release"
@@ -47,7 +47,7 @@
         }
     ],
     "execution": {
-        "Node": {
+        "Node10": {
             "target": "loadplistvariables.js",
             "argumentFormat": ""
         }

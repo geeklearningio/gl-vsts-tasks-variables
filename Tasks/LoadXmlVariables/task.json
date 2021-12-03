@@ -4,7 +4,7 @@
     "friendlyName": "Load Xml Variables",
     "description": "Load Xml files into build variables",
     "helpMarkDown": "[More Information](https://github.com/geeklearningio/gl-vsts-tasks-variables/wiki/Load-Xml-Variables) (Version #{Version}#)",    
-     "category": "Utility",
+    "category": "Utility",
     "visibility": [
         "Build",
         "Release"
@@ -47,7 +47,7 @@
         }
     ],
     "execution": {
-        "Node": {
+        "Node10": {
             "target": "loadxmlvariables.js",
             "argumentFormat": ""
         }
