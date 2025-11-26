@@ -1,4 +1,4 @@
-import tl = require("azure-pipelines-task-lib");
+import * as tl from "azure-pipelines-task-lib";
 
 export function recursiveProcessing(obj: any, prefix: string, isSecret: boolean): void {
     let typeArray: string[] = ["string", "number", "boolean"];
